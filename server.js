@@ -6,8 +6,14 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
+//playlist
+Playlist = require('./models/playlists');
+
 //setting the client side
 app.use(express.static('client'));
+
+//bodyparser middleware
+app.use(bodyParser.json());
 
 //port var
 const port = 5000;
@@ -15,6 +21,26 @@ const port = 5000;
 //home
 app.get('/', (req, res) => {
     res.send('Invalid endpoint')
+});
+
+//connecting to the DB
+mongoose.connection.openUri('mongodb://localhost/music')
+const db = mongoose.connection;
+
+//checking for errors in DB connection
+db.on('error', console.error.bind(console, 'connection error: '));
+db.once('open', () => {
+    console.log('we are connected');
+});
+
+//get playlists
+app.get('/api/playlists', (req, res) => {
+    Playlist.getPlaylists((err, playlists) => {
+        if(err){
+            throw err;
+        }
+        res.json(playlists)
+    });
 });
 
 app.listen(port, () => {
