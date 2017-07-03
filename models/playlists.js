@@ -27,7 +27,17 @@ const playlistSchema = mongoose.Schema({
 //defining the model
 const Playlist = module.exports = mongoose.model('playlist', playlistSchema);
 
-//get resource
+//get playlist
 module.exports.getPlaylists = function(callback, limit){
 	Playlist.find(callback).limit(limit);
+}
+
+//add playlist
+module.exports.addPlaylist = (playlist, callback) => {
+	Playlist.create(playlist, callback)
+}
+
+//delete playlist
+module.exports.removePlaylist = (playlist, callback) => {
+	Playlist.create(playlist, callback)
 }

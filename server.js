@@ -43,6 +43,28 @@ app.get('/api/playlists', (req, res) => {
     });
 });
 
+//add playlist
+app.post('/api/playlists', () => {
+    const playlist = req.body;
+    Playlist.addPlaylist(playlist, (err, playlist) =>{
+        if(err){
+            throw err;
+        }
+        res.json(playlist)
+    });
+});
+
+//remove playlist
+app.delete('/api/playlists', () => {
+    const playlist = req.body;
+    Playlist.removePlaylist(playlist, (err, playlist) =>{
+        if(err){
+            throw err;
+        }
+        res.json(playlist)
+    });
+});
+
 app.listen(port, () => {
     console.log('Server started on port ' + port);
 });
