@@ -38,6 +38,7 @@ module.exports.addPlaylist = (playlist, callback) => {
 }
 
 //delete playlist
-module.exports.removePlaylist = (playlist, callback) => {
-	Playlist.create(playlist, callback)
+module.exports.removePlaylist = (id, callback) => {
+	const query = {_id: id};
+	Playlist.remove(query, callback)
 }

@@ -44,7 +44,7 @@ app.get('/api/playlists', (req, res) => {
 });
 
 //add playlist
-app.post('/api/playlists', () => {
+app.post('/api/playlists', (req, res) => {
     const playlist = req.body;
     Playlist.addPlaylist(playlist, (err, playlist) =>{
         if(err){
@@ -55,9 +55,9 @@ app.post('/api/playlists', () => {
 });
 
 //remove playlist
-app.delete('/api/playlists', () => {
-    const playlist = req.body;
-    Playlist.removePlaylist(playlist, (err, playlist) =>{
+app.delete('/api/playlists/:_id', (req, res) => {
+    const id = req.params._id;
+    Playlist.removePlaylist(id, (err, playlist) => {
         if(err){
             throw err;
         }
