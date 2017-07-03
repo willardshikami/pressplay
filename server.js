@@ -54,7 +54,7 @@ app.post('/api/playlists', (req, res) => {
     });
 });
 
-//remove playlist
+//delete playlist
 app.delete('/api/playlists/:_id', (req, res) => {
     const id = req.params._id;
     Playlist.removePlaylist(id, (err, playlist) => {
