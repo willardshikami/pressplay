@@ -65,6 +65,7 @@ app.delete('/api/playlists', () => {
     });
 });
 
+//listening to port var
 app.listen(port, () => {
     console.log('Server started on port ' + port);
 });

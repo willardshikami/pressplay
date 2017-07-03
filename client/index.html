@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="">
+
+<head>
+    <title>Press Play</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+
+</head>
+
+<body>
+    
+
+    <div class="container">
+        <div class="row">
+            <div ng-view></div>
+        </div>
+    </div>
+
+    <!--reference-->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    <script src="controllers/playlists.js"></script>
+</body>
+
+</html>

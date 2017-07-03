@@ -28,7 +28,7 @@ const playlistSchema = mongoose.Schema({
 const Playlist = module.exports = mongoose.model('playlist', playlistSchema);
 
 //get playlist
-module.exports.getPlaylists = function(callback, limit){
+module.exports.getPlaylists = (callback, limit) => {
 	Playlist.find(callback).limit(limit);
 }
 
