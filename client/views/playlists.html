@@ -1,8 +1,8 @@
-<div ng-controller="PlaylistController">
 <div class="playlist-view" ng-init="getPlaylists()">
     <div class="container">
         <div class="row">
-            <div class="col-sm-4">
+            <!--ng repeat to cycle over the data in the API-->
+            <div class="col-sm-4" ng-repeat="playlist in playlists">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">{{playlist.playlist_name}}</h3>
@@ -16,5 +16,4 @@
             </div>
         </div>
     </div>
-</div>
 </div>
