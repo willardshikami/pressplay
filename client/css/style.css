@@ -16,6 +16,21 @@ body{
   background-color: #111517 !important;
 }
 
+.landing{
+  background-image: url("../images/landing2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  font-weight: 800;
+  font-family: 'Source Sans Pro', sans-serif;
+  height: 500px;
+}
+
+.landing .jumbotron{
+  background-color: rgba(0, 0, 0, 0.0) !important;
+  text-align: center;
+  padding-top: 200px;
+} 
 
 .search-box{
 	background: #fff;
@@ -50,6 +65,7 @@ body{
 */
 
 .playlist-title{
+  font-family: 'Source Sans Pro', sans-serif;
 	font-size: 30px;
 	font-weight: bold;
   margin: 10px 0 0 0;
