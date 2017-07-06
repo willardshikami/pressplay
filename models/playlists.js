@@ -7,6 +7,10 @@ const playlistSchema = mongoose.Schema({
 		type: String,
 		required: true
 	},
+	description:{
+		type:String,
+		required: true
+	},
 	username:{
 		type: String,
 		required: true
@@ -21,7 +25,12 @@ const playlistSchema = mongoose.Schema({
 	added_date: {
 		type: Date,
 		default: Date.now
+	},
+	playlist_url: {
+		type: String,
+		required: true
 	}
+
 });
 
 //defining the model

@@ -12,6 +12,10 @@ body{
 	src: url(../fonts/averta-regular-webfont.woff);
 }
 
+.navbar{
+  background-color: #111517 !important;
+}
+
 
 .search-box{
 	background: #fff;
