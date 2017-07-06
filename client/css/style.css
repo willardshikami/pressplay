@@ -40,14 +40,15 @@ body{
 }
 
 /*
-  ========================================
+  ===============================================
   GRID OF TWO (CARD GRID SECTIONS STARTS HERE)
-  ========================================
+  ===============================================
 */
 
 .playlist-title{
 	font-size: 30px;
 	font-weight: bold;
+  margin: 10px 0 0 0;
 }
 
 .card img{
@@ -60,4 +61,67 @@ body{
 .no-padding{
 	padding-left: 0 !important;
 	margin-left: 0 !important;
+}
+
+.username{
+  
+}
+
+.songs{
+  
+}
+
+/*
+a:hover .changespan{
+  display: none;
+}
+
+a:hover:before{
+  padding-top:4px; 
+  content: "LETS GOOO"
+}
+*/
+
+.card a {
+    color: #2b363b;
+    font-weight: bolder;
+    font-size: 13px;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.card a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card a:link {
+    color: #2b363b;
+}
+
+/* visited link */
+.card a:visited {
+    color: #111517;
+}
+
+/* mouse over link */
+.card a:hover {
+    color: #111517;
+}
+
+/* selected link */
+.card a:active {
+    color: #111517;
+}
+
+/*
+  ========================================
+  GO FULL WIDTH AT LESS THAN 480 PIXELS
+  ========================================
+*/
+
+@media only screen and (max-width: 1200px) {
+  .card {
+    height: inherit;
+    }
 }
