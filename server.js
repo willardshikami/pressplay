@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 const port = 5000;
 
 //connecting to the DB
-mongoose.connection.openUri('mongodb://willies:animelistpassword1@ds151062.mlab.com:51062/music')
+mongoose.connection.openUri('')
 const db = mongoose.connection;
 
 //checking for errors in DB connection
