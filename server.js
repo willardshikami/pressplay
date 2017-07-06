@@ -18,13 +18,8 @@ app.use(bodyParser.json());
 //port var
 const port = 5000;
 
-//home
-app.get('/', (req, res) => {
-    res.send('Invalid endpoint')
-});
-
 //connecting to the DB
-mongoose.connection.openUri('')
+mongoose.connection.openUri('mongodb://willies:animelistpassword1@ds151062.mlab.com:51062/music')
 const db = mongoose.connection;
 
 //checking for errors in DB connection
