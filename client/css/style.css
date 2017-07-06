@@ -23,13 +23,13 @@ body{
   color: #FFFFFF;
   font-weight: 800;
   font-family: 'Source Sans Pro', sans-serif;
-  height: 500px;
+  height: 400px;
 }
 
 .landing .jumbotron{
   background-color: rgba(0, 0, 0, 0.0) !important;
   text-align: center;
-  padding-top: 150px;
+  padding-top: 100px;
 } 
 
 .landing .jumbotron p {
@@ -55,17 +55,17 @@ body{
 }
 
 .playlist-view{
-    margin-top: 100px; 
+    margin-top: 40px; 
 }
 
 .card {
-  background: #fff;
+  background: #FFFFFF;
   border-radius: 2px;
   display: inline-block;
-  height: 180px;
+  height: 200px;
+  width: 370px !important;
   margin: 1rem;
   position: relative;
-  width: 300px;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
@@ -100,6 +100,7 @@ body{
 }
 
 .songs{
+  color: #999999;
   padding: 0 !important;
 	margin: 0 !important;
 }

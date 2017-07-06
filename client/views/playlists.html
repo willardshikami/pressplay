@@ -2,6 +2,7 @@
     <div class="container">
         <div class="row">
             <!--ng repeat to cycle over the data in the API-->
+            <div class="back-opacity">
             <div class="card col-sm-4" ng-repeat="playlist in playlists | filter:resourceList.search | orderBy: Title">
                    <h1 class="playlist-title">{{playlist.playlist_name}}</h1>
                    <p class="username"><span style="color: #999999;">playlist by </span>{{playlist.username}}</p>
@@ -9,6 +10,7 @@
                    <p class="description">{{playlist.description}}</p>
 
                    <a href="{{playlist.playlist_url}}" target="_blank"><span class="changespan">PRESSPLAY<span>  &#160; &#160; &#160; &#160;<span style="font-size: 21px;">&#8250;</span></a>
+            </div>
             </div>
         </div>
     </div>

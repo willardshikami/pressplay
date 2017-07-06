@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
 });
 
 //connecting to the DB
-mongoose.connection.openUri('')
+mongoose.connection.openUri('mongodb://willies:animelistpassword1@ds151062.mlab.com:51062/music')
 const db = mongoose.connection;
 
 //checking for errors in DB connection
