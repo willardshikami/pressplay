@@ -2,6 +2,8 @@ const express = require('express');
 const path = require('path');
 const http = require('http');
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
 const bodyParser = require('body-parser');
 
 const app = express();
@@ -15,11 +17,11 @@ app.use(express.static('client'));
 //bodyparser middleware
 app.use(bodyParser.json());
 
-//port var
-const port = 5000;
+
+app.set('port', process.env.PORT || 5000);
 
 //connecting to the DB
-mongoose.connection.openUri('')
+mongoose.connection.openUri('mongodb://willies:animelistpassword1@ds151062.mlab.com:51062/music')
 const db = mongoose.connection;
 
 //checking for errors in DB connection
