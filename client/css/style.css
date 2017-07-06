@@ -17,7 +17,7 @@ body{
 }
 
 .landing{
-  background-image: url("../images/landing2.jpg");
+  background-image: url("../images/landing.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: #FFFFFF;
@@ -29,18 +29,29 @@ body{
 .landing .jumbotron{
   background-color: rgba(0, 0, 0, 0.0) !important;
   text-align: center;
-  padding-top: 200px;
+  padding-top: 150px;
 } 
 
+.landing .jumbotron p {
+	font-family: 'Averta', sans-serif !important;
+}
+
 .search-box{
-	background: #fff;
-	width: 680px;
-	margin: 0 auto;
-	height: 35px;
-  border-radius: 2px;
-	border: 2px #fff;
-	outline: none;
+  color: #111517 !important;
+  border: 2px #fff;
+  border-left-style: 10px;
+  font-family: 'Averta', sans-serif !important;
+  width: 35%;
+  height: 50px;
   font-size: 18px;
+  padding-left: 1em;
+  box-shadow: 0 5px 13px rgba(0,0,0,0.12), 0 11px 12px rgba(0,0,0,0.24);
+}
+
+
+
+.form-group{
+  margin-top: 50px;
 }
 
 .playlist-view{

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <!--ng repeat to cycle over the data in the API-->
-            <div class="card col-sm-4" ng-repeat="playlist in playlists">
+            <div class="card col-sm-4" ng-repeat="playlist in playlists | filter:resourceList.search | orderBy: Title">
                    <h1 class="playlist-title">{{playlist.playlist_name}}</h1>
                    <p class="username"><span style="color: #999999;">playlist by </span>{{playlist.username}}</p>
                    <p class="songs">{{playlist.number_of_songs}} songs</p>
