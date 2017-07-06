@@ -95,11 +95,17 @@ body{
 }
 
 .username{
-  
+  padding: 0 !important;
+	margin: 0 !important;
 }
 
 .songs{
-  
+  padding: 0 !important;
+	margin: 0 !important;
+}
+
+.description{
+  padding-top: 10px;
 }
 
 /*
@@ -128,11 +134,13 @@ a:hover:before{
 
 .card a:link {
     color: #2b363b;
+    text-decoration: none;
 }
 
 /* visited link */
 .card a:visited {
     color: #111517;
+    text-decoration: none;
 }
 
 /* mouse over link */
@@ -143,7 +151,14 @@ a:hover:before{
 /* selected link */
 .card a:active {
     color: #111517;
+    text-decoration: none;
 }
+
+.card a:after {
+    color: #111517;
+    text-decoration: none;
+}
+
 
 /*
   ========================================

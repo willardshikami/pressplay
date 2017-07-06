@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
 });
 
 //connecting to the DB
-mongoose.connection.openUri('mongodb://localhost/music')
+mongoose.connection.openUri('')
 const db = mongoose.connection;
 
 //checking for errors in DB connection
