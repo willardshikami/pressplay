@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 app.set('port', process.env.PORT || 5000);
 
 //connecting to the DB
-mongoose.connection.openUri('')
+mongoose.connection.openUri('mongodb://localhost/music')
 const db = mongoose.connection;
 
 //checking for errors in DB connection
@@ -63,6 +63,6 @@ app.delete('/api/playlists/:_id', (req, res) => {
 });
 
 //listening to port var
-app.listen(port, () => {
-    console.log('Server started on port ' + port);
+var server = http.createServer(app).listen(app.get('port'), function () {
+    console.log('Server listening on port ' + app.get('port'));
 });

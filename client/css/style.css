@@ -3,6 +3,7 @@ body{
 	font-family: 'Averta', sans-serif !important;
   margin: 0;
   padding: 0;
+  min-height: 3000px;
 }
 
 @font-face {
@@ -12,8 +13,10 @@ body{
 	src: url(../fonts/averta-regular-webfont.woff);
 }
 
-.navbar{
-  background-color: #111517 !important;
+
+.navbar-brand{
+  color: #FFFFFF !important;
+  font-weight: bold;
 }
 
 .landing{
@@ -30,10 +33,15 @@ body{
   background-color: rgba(0, 0, 0, 0.0) !important;
   text-align: center;
   padding-top: 100px;
-} 
+}
+
+.landing .jumbotron h1{
+   text-shadow: 2px 2px #111517;
+}
 
 .landing .jumbotron p {
 	font-family: 'Averta', sans-serif !important;
+  text-shadow: 2px 2px #111517;
 }
 
 .search-box{
