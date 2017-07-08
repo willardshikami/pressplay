@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 app.set('port', process.env.PORT || 5000);
 
 //connecting to the DB
-mongoose.connection.openUri('mongodb://willies:animelistpassword1@ds151062.mlab.com:51062/music')
+mongoose.connection.openUri('mongodb://localhost/music')
 const db = mongoose.connection;
 
 //checking for errors in DB connection
