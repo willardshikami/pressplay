@@ -2,82 +2,92 @@
 <html ng-app="playlistApp">
 
 <head>
-    <title>Press Play</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-    <!--FAVICON-->
-    <link rel="icon" href="images/favicon.png" type="image/png">
+  <title>Press Play</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <!--FAVICON-->
+  <link rel="icon" href="images/favicon.png" type="image/png">
 
-    <!--GOOGLE FONTS-->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900" rel="stylesheet">
+  <!--GOOGLE FONTS-->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" style="background: none !important;">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Press Play</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#!/about">About</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-
-    <nav class="navscroll navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Press Play</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#!/about">About</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-
-    <div class="landing">
-      <div class="jumbotron" >
-        <h1 class="title">EXPLORE SPOTIFY PLAYLISTS</h1>
-        <p>Music for every moment</p>
-          <div class="form-group">
-            <input class="search-box" type="text" placeholder="Explore playlists" ng-model="resourceList.search">
-            <i class="fa fa-search"></i>
-          </div>
-      </div>
-    </div>
-    
+  <nav class="navbar-transparent navbar navbar-inverse navbar-fixed-top">
     <div class="container">
-        <div class="row">
-            <div ng-view></div>
-        </div>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="#">Press Play</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#!/new-releases">New Releases</a></li>
+          <li><a href="#!/discover">Discover</a></li>
+          <li><a href="#!/moods">Moods</a></li>
+          <li><a href="#!/charts">Charts</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
     </div>
+  </nav>
 
-    <!--reference-->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/angular/angular.js"></script>
-    <script src="/bower_components/angular-route/angular-route.js"></script>
-    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="controllers/playlists.js"></script>
+  <nav class="navscroll navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="#">Press Play</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#!/new-releases">New Releases</a></li>
+          <li><a href="#!/discover">Discover</a></li>
+          <li><a href="#!/moods">Moods</a></li>
+          <li><a href="#!/charts">Charts</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <div class="landing">
+    <div class="jumbotron">
+      <h1 class="title">EXPLORE SPOTIFY PLAYLISTS</h1>
+      <p>Music for every moment</p>
+      <div class="form-group">
+        <input class="search-box" type="text" placeholder="Explore playlists" ng-model="resourceList.search">
+        <i class="fa fa-search"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div ng-view></div>
+    </div>
+  </div>
+
+  <!--reference-->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/angular/angular.js"></script>
+  <script src="/bower_components/angular-route/angular-route.js"></script>
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="controllers/playlists.js"></script>
 </body>
 
 </html>

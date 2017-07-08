@@ -19,6 +19,21 @@ body{
   font-weight: bold;
 }
 
+.navbar-nav a{
+  color: #FFFFFF !important;
+}
+
+.navbar-transparent{
+  background:transparent !important;
+  background-image:none !important;
+  border-color:transparent !important;
+  box-shadow:none !important;
+}
+
+.navscroll{
+  background: #111517;
+}
+
 .landing{
   background-image: url("../images/landing.jpg");
   background-size: cover;
