@@ -3,7 +3,6 @@ body{
 	font-family: 'Averta', sans-serif !important;
   margin: 0;
   padding: 0;
-  min-height: 3000px;
 }
 
 @font-face {
@@ -34,13 +33,18 @@ body{
   background: #111517;
 }
 
+.title{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 .landing{
   background-image: url("../images/landing.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: #FFFFFF;
   font-weight: 800;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   height: 400px;
 }
 
@@ -71,8 +75,6 @@ body{
   box-shadow: 0 5px 13px rgba(0,0,0,0.12), 0 11px 12px rgba(0,0,0,0.24);
 }
 
-
-
 .form-group{
   margin-top: 50px;
 }
@@ -82,14 +84,17 @@ body{
 }
 
 .card {
-  background: #FFFFFF;
   border-radius: 2px;
   display: inline-block;
-  height: 200px;
-  width: 370px !important;
-  margin: 1rem;
   position: relative;
+  
+}
+
+.card-desc {
+  background: #FFFFFF;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 /*
@@ -99,24 +104,18 @@ body{
 */
 
 .playlist-title{
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 	font-size: 30px;
 	font-weight: bold;
-  margin: 10px 0 0 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .card img{
 	width: 100%;
 	overflow: hidden;
-	padding-left: 0 !important;
-	margin-left: 0 !important;
+  box-shadow: 0 0 4px rgba(0,0,0,0.12), 0 0 3px rgba(0,0,0,0.24);
 }
-
-.no-padding{
-	padding-left: 0 !important;
-	margin-left: 0 !important;
-}
-
 .username{
   padding: 0 !important;
 	margin: 0 !important;
@@ -129,14 +128,14 @@ body{
 }
 
 .description{
-  padding-top: 10px;
+  padding: 10px 0 20px 0;
 }
 
 /*
 a:hover .changespan{
   display: none;
 }
-
+ #1DB954;
 a:hover:before{
   padding-top:4px; 
   content: "LETS GOOO"
@@ -144,54 +143,88 @@ a:hover:before{
 */
 
 .card a {
-    color: #2b363b;
-    font-weight: bolder;
+    color: #111517;
     font-size: 13px;
     text-decoration: none;
-    letter-spacing: 2px;
+    outline: 0;
 }
 
 .card a:hover {
     text-decoration: none;
     cursor: pointer;
+    outline: 0;
 }
 
 .card a:link {
-    color: #2b363b;
+    color: #111517;
     text-decoration: none;
+    outline: 0;
 }
 
 /* visited link */
 .card a:visited {
     color: #111517;
     text-decoration: none;
+    outline: 0;
 }
 
 /* mouse over link */
 .card a:hover {
     color: #111517;
+    outline: 0;
 }
 
 /* selected link */
 .card a:active {
     color: #111517;
     text-decoration: none;
+    outline: 0;
 }
 
 .card a:after {
     color: #111517;
     text-decoration: none;
+    outline: 0;
 }
 
+.the-line{
+  padding: 50px;
+}
+
+hr{
+  border-color: #CCCCCC !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer{
+  font-size: 12px;
+  padding: 50px;
+}
+
+footer .footer-text{
+  text-align: center;
+  font-weight: bold;
+}
+
+footer .second-p{
+  color: #999999;
+}
 
 /*
   ========================================
-  GO FULL WIDTH AT LESS THAN 480 PIXELS
+  MEDIA QUERIES
   ========================================
 */
 
 @media only screen and (max-width: 1200px) {
   .card {
     height: inherit;
+    }
+}
+
+@media only screen and (max-width: 620px){
+    .search-box{
+      width: inherit;
     }
 }

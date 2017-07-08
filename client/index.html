@@ -11,7 +11,7 @@
   <link rel="icon" href="images/favicon.png" type="image/png">
 
   <!--GOOGLE FONTS-->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet">  
 </head>
 
 <body>
@@ -39,7 +39,7 @@
     </div>
   </nav>
 
-  <nav class="navscroll navbar navbar-inverse navbar-fixed-top">
+  <nav class="navbar navbar-inverse navbar-fixed-top navscroll">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
@@ -65,11 +65,10 @@
 
   <div class="landing">
     <div class="jumbotron">
-      <h1 class="title">EXPLORE SPOTIFY PLAYLISTS</h1>
+      <h1 class="title">Explore Spotiify playlists</h1>
       <p>Music for every moment</p>
       <div class="form-group">
         <input class="search-box" type="text" placeholder="Explore playlists" ng-model="resourceList.search">
-        <i class="fa fa-search"></i>
       </div>
     </div>
   </div>
@@ -79,6 +78,17 @@
       <div ng-view></div>
     </div>
   </div>
+
+  <div class="the-line">
+    <hr/>
+  </div>
+
+  <footer>
+    <div class="footer-text">
+      <p><span style="font-size: 15px">&copy</span> 2017 PRESSPLAY</p>
+      <p class="second-p">NOTE: USING THIS SERVICE REQUIRES A SPOTIFY ACCOUNT</p>
+    </div>
+  </footer>
 
   <!--reference-->
   <script src="/bower_components/jquery/dist/jquery.js"></script>
