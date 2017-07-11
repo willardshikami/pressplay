@@ -15,6 +15,4 @@ angular.module('playlistApp')
                 window.location.href='#!/playlists'
             });
         }
-
-
     }]);
