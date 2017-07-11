@@ -6,13 +6,18 @@ playlistApp.config(function($routeProvider) {
         templateUrl: 'views/playlists.html'
     });
 
-    $routeProvider.when('/playlist', {
+    $routeProvider.when('/artistes', {
         controller: 'PlaylistController',
-        templateUrl: 'views/playlists.html'
+        templateUrl: 'views/artistes.html'
     });
 
-    $routeProvider.when('/about', {
+    $routeProvider.when('/charts',{
         controller: 'PlaylistController',
-        templateUrl: 'views/about.html'
+        templateUrl: 'views/charts.html'
+    });
+
+    $routeProvider.when('/releases', {
+        controller: 'PlaylistController',
+        templateUrl: 'views/releases.html'
     });
 });
