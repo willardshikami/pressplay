@@ -1,2 +1,2 @@
 # pressplay
-Discover a huge variety of Spotify playlists.
+Discover a variety of Spotify playlists.
