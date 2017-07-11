@@ -40,7 +40,7 @@ module.exports.getArtistes = (callback, limit) => {
     Artiste.find(callback).limit(limit);
 }
 
-//add artiste
+//add artisteartiste
 module.exports.addArtiste = (artiste, callback) => {
     Artiste.create(artiste, callback);
 }

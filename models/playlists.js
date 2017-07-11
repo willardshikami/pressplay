@@ -43,11 +43,11 @@ module.exports.getPlaylists = (callback, limit) => {
 
 //add playlist
 module.exports.addPlaylist = (playlist, callback) => {
-	Playlist.create(playlist, callback)
+	Playlist.create(playlist, callback);
 }
 
 //delete playlist
 module.exports.removePlaylist = (id, callback) => {
 	const query = {_id: id};
-	Playlist.remove(query, callback)
+	Playlist.remove(query, callback);
 }
