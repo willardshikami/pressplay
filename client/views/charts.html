@@ -1,0 +1,22 @@
+<div class="playlist-view" ng-init="getPlaylists()">
+	<div class="container">
+		<div class="row">
+			<!--ng repeat to cycle over the data in the API-->
+			<div class="back-opacity">
+				<div class="card col-sm-4" ng-repeat="playlist in playlists | filter:resourceList.search | orderBy: Title">
+					<a href="{{playlist.playlist_url}}" target="_blank">
+					<img src="{{playlist.image_url}}">
+
+					<div class="card-desc">
+						<h1 class="playlist-title">{{playlist.playlist_name}}</h1>
+						<p class="songs">{{playlist.number_of_songs}} songs</p>
+						<p class="description">{{playlist.description}}</p>
+
+						<p class="username"><span style="color: #999999;">Playlist by </span>{{playlist.username}}</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

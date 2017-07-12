@@ -9,10 +9,11 @@ angular.module('playlistApp')
             });
         }
 
-        $scope.addPlaylists = function(){
+        $scope.addPlaylist = function(){
             $http.post('/api/playlists', $scope.playlist)
             .then(function(response){
                 window.location.href='#!/playlists'
             });
         }
     }]);
+    
