@@ -10,7 +10,7 @@ angular.module('playlistApp')
         }
 
         $scope.addReleases = function(){
-            $http.post('/api/releases', $scope.releases)
+            $http.post('/api/releases', $scope.release)
             .then(function(response){
                 window.location.href='#!/releases'
             });
