@@ -1,6 +1,5 @@
 angular.module('playlistApp')
     playlistApp.controller('PlaylistController', ['$scope', '$http', '$location', '$routeParams',function($scope, $http, $location, $routeParams) {
-        console.log('Playlistcontroller loaded');
 
         $scope.getPlaylists = function(){
             $http.get('/api/playlists')
