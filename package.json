@@ -1,7 +1,7 @@
 {
   "name": "pressplay",
   "version": "1.0.0",
-  "description": "Discover a huge variety of Spotify playlists.",
+  "description": "Discover variety of Spotify playlists.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,12 +15,15 @@
   "bugs": {
     "url": "https://github.com/willardshikami/pressplay/issues"
   },
-   "dependencies": {
+  "dependencies": {
     "body-parser": "*",
     "express": "*",
     "mongodb": "*",
     "mongoose": "*",
     "nodemon": "^1.11.0"
-    },
-  "homepage": "https://github.com/willardshikami/pressplay#readme"
+  },
+  "homepage": "https://github.com/willardshikami/pressplay#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
 }

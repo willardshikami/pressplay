@@ -19,5 +19,8 @@ playlistApp.config(function($routeProvider) {
     $routeProvider.when('/releases', {
         controller: 'PlaylistController',
         templateUrl: 'views/releases.html'
+    })
+    .otherwise({
+        redirectTo: '/'
     });
 });
