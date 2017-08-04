@@ -6,6 +6,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/artistes.css">
+  <link rel="stylesheet" href="css/playlists.css">
+  <link rel="stylesheet" href="css/charts.css">
+  <link rel="stylesheet" href="css/releases.css">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <!--FAVICON-->
   <link rel="icon" href="images/favicon.png" type="image/png">
@@ -61,17 +65,7 @@
     </div>
   </nav>
 
-  <div class="landing">
-    <div class="jumbotron">
-      <h1 class="title">Explore Spotify playlists</h1>
-      <p>Music for every moment</p>
-      <div class="form-group">
-        <input class="search-box" type="text" placeholder="Explore playlists" ng-model="resourceList.search">
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
+  <div class="container" id="container"> 
     <div class="row">
       <div ng-view></div>
     </div>
