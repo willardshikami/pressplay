@@ -4,7 +4,7 @@
 }
 
 .landing-releases{
-  background-image: url("../images/landing.jpg");
+  background-image: url("../images/landing-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: #FFFFFF;
@@ -101,17 +101,6 @@
 .description{
   padding: 10px 0 20px 0;
 }
-
-/*
-a:hover .changespan{
-  display: none;
-}
- #1DB954;
-a:hover:before{
-  padding-top:4px; 
-  content: "LETS GOOO"
-}
-*/
 
 .card a {
     color: #111517;
