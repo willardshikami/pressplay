@@ -7,15 +7,7 @@ module.exports = function(grunt) {
     // Here we’re going to define our tasks
     connect: {
       uses_defaults: {}
-    },
-
-    uglify: {
-      my_target: {
-      files: {
-        'dest/output.min.js': ['src/input1.js', 'src/input2.js']
-      }
     }
-  }
 
   });
 
