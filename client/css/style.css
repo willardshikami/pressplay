@@ -80,6 +80,8 @@ footer .second-p{
 
 @media only screen and (max-width: 620px){
     .search-box{
-      width: inherit;
+      width: auto !important;
+      margin: -10px !important;
+      overflow: none !important;
     }
 }

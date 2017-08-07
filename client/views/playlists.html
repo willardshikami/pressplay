@@ -1,4 +1,4 @@
-<div class="artistes">
+<div class="playlists">
 	<div class="landing-playlists">
 		<div class="jumbotron">
 			<h1 class="title">Explore Spotify playlists</h1>
@@ -9,7 +9,7 @@
 		</div>
 	</div>
 
-<div class="playlist-view" ng-init="getPlaylists()">
+<div ng-controller="PlaylistController" class="playlist-view" ng-init="getPlaylists()">
 	<div class="container">
 		<div class="row">
 			<!--ng repeat to cycle over the data in the API-->
