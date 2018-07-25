@@ -1,5 +1,5 @@
 <div class="charts">
-	<div class="landing-charts">
+	<div class="animated fadeIn landing-charts">
 		<div class="jumbotron">
 			<h1 class="title">Explore Spotify Charts</h1>
 			<p>Music for every moment</p>
@@ -13,7 +13,7 @@
 		<div class="row">
 			<!--ng repeat to cycle over the data in the API-->
 			<div class="back-opacity">
-				<div class="card col-sm-4" ng-repeat="chart in charts | filter:resourceList.search | orderBy: Title">
+				<div class="animated fadeInUp card col-sm-4" ng-repeat="chart in charts | filter:resourceList.search | orderBy: Title">
 					<a href="{{chart.playlist_url}}" target="_blank">
 					<img src="{{chart.image_url}}">
 
